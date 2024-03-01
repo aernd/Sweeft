@@ -10,6 +10,23 @@ public class Main {
         //testHappyString();
         //testIntersection();
         //testValidSequence();
+        //testLongSubarraySolver();
+
+    }
+
+    private static void testLongSubarraySolver() {
+        LongSubarraySolver s = new LongSubarraySolver();
+        int[] array= {6,2,2,3,4,1};
+        int k = 8;
+        System.out.println(s.lenOfLongSubarr(array, k));
+
+        array= new int[]{5, 2, 3, 10};
+        k = 10;
+        System.out.println(s.lenOfLongSubarr(array, k));
+
+        array= new int[]{5, 2, 3, 10};
+        k = 1;
+        System.out.println(s.lenOfLongSubarr(array, k));
     }
 
     private static void testValidSequence() {
